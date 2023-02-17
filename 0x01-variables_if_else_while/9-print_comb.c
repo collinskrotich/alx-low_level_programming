@@ -14,11 +14,11 @@ int main(void)
 		{
 			putchar((dc % 10) + '0');
 			putchar(',');
+			putchar('\n');
 		} else
 		{
 			putchar((dc % 10) + '0');
 		}
-		putchar('\n');
 	}
 	return (0);
 }
