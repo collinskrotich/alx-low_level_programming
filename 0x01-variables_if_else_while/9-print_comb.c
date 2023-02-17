@@ -12,8 +12,8 @@ int main(void)
 	{
 		if (dc != 9)
 		{
-			putchar((dc % 10) + '0'+ ',');
-			putchar(' ');
+			putchar((dc % 10) + '0');
+			putchar(',');
 		} else
 		{
 			putchar((dc % 10) + '0');
