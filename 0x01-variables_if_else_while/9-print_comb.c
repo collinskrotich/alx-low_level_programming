@@ -14,7 +14,7 @@ int main(void)
 		{
 			putchar((dc % 10) + '0');
 			putchar(',');
-			putchar('\n');
+			putchar(' ');
 		} else
 		{
 			putchar((dc % 10) + '0');
