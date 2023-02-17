@@ -7,18 +7,18 @@
 int main(void)
 {
 	int dc;
-	char com = ',';
 
 	for (dc = 0; dc <= 9; dc++)
 	{
 		if (dc != 9)
 		{
 			putchar((dc % 10) + '0');
-			putchar(com);
-		}
-		else
+			putchar(',');
+		} else
 		{
 			putchar((dc % 10) + '0');
 		}
 	}
+	putchar('\n');
+	return (0);
 }
