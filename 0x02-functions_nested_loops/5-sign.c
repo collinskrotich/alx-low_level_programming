@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_sign - prints the sign of a number.
  * @n: is the integer being checked if positive or negative
