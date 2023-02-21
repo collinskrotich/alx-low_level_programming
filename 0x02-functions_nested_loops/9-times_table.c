@@ -3,13 +3,34 @@
  * times_table - print multiplication table
  * Return: 0
  */
+
 void times_table(void)
 {
-	int n, m;
+	int i, j, res;
 
-	for ((n = 0; n <= 9; n++) && (m = 0; m <= 9; m++))
+	for (i = 0; i <= 9; i++)
 	{
-		_putchar((n * m) + '0');
+		for (j = 0; j <= 9; j++)
+		{
+			res = (i * j);
+			if (j != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			if (res >= 10)
+			{
+				_putchar((res / 10) + '0');
+				_putchar((res % 10) + '0');
+			}
+			else if (res < 10 && j != 0)
+			{
+				_putchar(' ');
+				_putchar((res % 10) + '0');
+			}
+			else
+				_putchar((res % 10) + '0');
+		}
 		_putchar('\n');
 	}
 }
