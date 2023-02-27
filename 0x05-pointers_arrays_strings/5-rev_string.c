@@ -3,19 +3,27 @@
 #include <string.h>
 /**
  * rev_string - reverse a string
- * @str: string to reverse
+ * @s: string to reverse
  * Return: 0
  */
-void rev_string(char *str)
+void rev_string(char *s)
 {
-	int n = strlen(str);
+	char *t = s;
+	char n[1000];
+	short c = 0;
 
-	for (int i = 0; i < n / 2; i++)
+	while (*s != '\0')
 	{
-		char ch = str[i];
-
-		str[i] = str[n - i - 1];
-		str[n - i - 1] = ch;
+		n[c] = *s;
+		s++;
+		c++;
 	}
-	putchar('\n');
+	c = 0;
+
+	while (s > t)
+	{
+		s--;
+		*s = n[c];
+		c++;
+	}
 }
