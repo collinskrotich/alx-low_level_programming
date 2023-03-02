@@ -11,9 +11,10 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *result = malloc(strlen(dest) + strlen(src) + 1);
+	char result[100];
 
 	strcpy(result, dest);
 	strcat(result, src);
-	return (result);
+	printf("%s\n", result);
+	return (0);
 }
