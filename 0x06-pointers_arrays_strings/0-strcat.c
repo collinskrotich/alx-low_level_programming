@@ -15,8 +15,6 @@ char *_strcat(char *dest, char *src)
 
 	strcpy(result, dest);
 	strcat(result, src);
-	printf("%s", result);
-	printf("%s", src);
-	putchar('\n');
+	puts(result);
 	return (0);
 }
