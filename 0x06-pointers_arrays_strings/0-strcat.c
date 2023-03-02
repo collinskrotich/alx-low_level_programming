@@ -9,12 +9,8 @@
  *  Return: concatenated string
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char dest[50], char src[50])
 {
-	char result[100];
-
-	strcpy(result, dest);
-	strcat(result, src);
-	puts(result);
-	return (0);
+	strcat(dest, src);
+	return (dest);
 }
