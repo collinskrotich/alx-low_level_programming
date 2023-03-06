@@ -5,11 +5,11 @@
  *@dest: destination
  * @src: source
  * @n: integer
- * Return: 0
+ * Return: pointer to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	memcpy(dest, src, n);
-	return (0);
+	return (dest);
 	putchar('\n');
 }
