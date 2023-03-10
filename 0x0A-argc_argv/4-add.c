@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 	for (index1 = 1; index1 < argc; index1++)
 	{
-		for (index2 = 0; argv[index1][index2]!= '\0'; index2++)
+		for (index2 = 0; argv[index1][index2] != '\0'; index2++)
 		{
 			if (!isdigit(argv[index1][index2]))
 			{
